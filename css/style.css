@@ -1,0 +1,147 @@
+@media only screen and (min-width: 601px) {
+    * {
+        font-family: 'Stardos Stencil', cursive;
+        margin: 0 auto;
+        padding: 0 auto;
+        scroll-behavior: smooth;
+
+    }
+
+    .sidenav {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 10vh;
+    }
+
+    .sidenav a {
+        padding: 1vw;
+        padding-top: 3vh;
+        text-decoration: none;
+        font-size: 30px;
+        color: #818181;
+        display: block;
+        transition: 0.5s;
+    }
+
+    .sidenav a img {
+        height: 120px;
+    }
+
+
+    .sidenav .hover:hover {
+        color: snow;
+        background-color: black;
+        border-bottom: snow 1px solid;
+    }
+
+
+    .sidenav .kruisje {
+        position: absolute;
+        top: 0;
+        padding: 1vw;
+        margin-left: -5vw;
+        font-size: 40px;
+        padding-left: 18vw;
+        padding-right: 25vw;
+        background-color: black;
+        border-bottom: 1px solid snow;
+
+    }
+
+    .sidenavm {
+        display: none;
+    }
+
+    #desktop {
+        position: absolute;
+        padding-top: 2vh;
+        text-align: center;
+        cursor: pointer;
+        font-size: 30px;
+        color: black;
+        padding-right: 2vw;
+        padding-left: 2vw;
+        padding-bottom: 1vh;
+    }
+
+    #mobiel {
+        display: none;
+    }
+
+
+    body {
+        background-color: wheat;
+    }
+
+    #logo img {
+        width: 62vw;
+    }
+
+    #logo {
+        font-size: 26px;
+        text-align: center;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    * {
+        font-family: 'Stardos Stencil', cursive;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+
+    .sidenav {
+        display: none
+    }
+
+    .sidenavm {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 10vh;
+    }
+
+    .sidenavm a {
+        width: 100%;
+        padding: 1vw;
+        padding-top: 5vh;
+        text-decoration: none;
+        font-size: 30px;
+        color: #818181;
+        display: block;
+        transition: 0.5s;
+        text-align: center;
+    }
+
+    .sidenavm .hover:hover {
+        color: snow;
+        background-color: black;
+        border-bottom: snow 1px solid;
+    }
+
+    span {
+        text-align: center;
+        font-size: 40px;
+        color: black;
+    }
+
+
+    #desktop {
+        display: none
+    }
+}
+
+

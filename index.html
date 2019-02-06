@@ -8,9 +8,51 @@
     <meta name="keywords" content="">
     <title>ScheveSchaar</title>
     <link rel="stylesheet" type="text/css" href="css/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Dosis|Oswald" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Stardos+Stencil" rel="stylesheet">
+    <script>
+        function openNavdesktop() {
+            document.getElementById("sidenav").style.width = "250px";
+        }
+
+        function closeNavdesktop() {
+            document.getElementById("sidenav").style.width = "0";
+        }
+
+        function openNav() {
+            document.getElementById("sidenavm").style.width = "100vw";
+        }
+
+        function closeNav() {
+            document.getElementById("sidenavm").style.width = "0";
+        }
+    </script>
 </head>
 <body>
+<div id="sidenav" class="sidenav">
+    <a href="javascript:void(0)" class="kruisje hover" onclick="closeNavdesktop()">&times;</a>
+    <a class="hover" href="#">Start Pagina</a>
+    <a class="hover" href="#">Assortiment</a>
+    <a class="hover" href="#">Locatie</a>
+    <a class="hover" href="">Contact</a>
+
+
+</div>
+<div id="sidenavm" class="sidenavm">
+    <a href="javascript:void(0)" class="kruisje hover" onclick="closeNav()">&times;</a>
+    <a class="hover" href="#">Start Pagina</a>
+    <a class="hover" href="#">Assortiment</a>
+    <a class="hover" href="#">Locatie</a>
+    <a class="hover" href="#">Contact</a>
+
+
+</div>
+<span id="desktop" onclick="openNavdesktop()">&#9776; Menu</span>
+
+<span id="mobiel" onclick="openNav()">&#9776; Menu</span>
+<div id="logo">
+    <img src="img/logobroodtekst.png">
+    <h1>Het is dood lekker!</h1>
+</div>
 <footer>
 </footer>
 
