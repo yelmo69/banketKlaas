@@ -156,23 +156,38 @@
     text-align: center;
     }
     table {
-        align-content: start;
         border-collapse: collapse;
-        float: left;
-        font-size: 24px;
-        padding-left: 2vw;
+        font-size: 32px;
     }
 
-    td, th {
-        border: 1px solid #dddddd;
+    td {
         text-align: left;
         padding: 8px;
     }
+    th {
+        font-size: 32px;
 
-footer{
-    height: 50vh;
+    }
+
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    #time {
+        display: grid;
+
+    }
+    footer{
+        justify-content: space-between;
+    }
+    footer img {
+        height: 20vh;
+
+    }
+
 }
-
+h3 {
+    text-align: center;
 }
 
 @media only screen and (max-width: 600px) {
