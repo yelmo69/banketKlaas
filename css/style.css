@@ -1,4 +1,4 @@
-@media only screen and (min-width: 601px) {
+@media only screen and (min-width: 1026px) {
     * {
         font-family: 'Stardos Stencil', cursive;
         margin: 0 auto;
@@ -110,8 +110,7 @@
         font-size: 42px;
     }
     #slider{
-        width: 70vw;
-        height: 70vh;
+        width: 90vw;
         display: flex;
         border-radius: 10px;
         margin-bottom: 3vh;
@@ -121,7 +120,7 @@
         display: flex;
     }
     #pastry img {
-        height: 50vh;
+        width: 30vw;
         margin-bottom: 5vw;
     }
     .container {
@@ -147,6 +146,12 @@
         margin-bottom: 3vh;
 
     }
+    .tablet2 {
+        display: none;
+    }
+    #tablet3 {
+        display: none;
+    }
     .bonbon {
         width: 90vw;
         display: flex;
@@ -154,6 +159,10 @@
     }
     #contact{
     text-align: center;
+    }
+    #googleMap {
+        width:100%;
+        height:500px;
     }
     table {
         border-collapse: collapse;
@@ -184,12 +193,156 @@
         height: 20vh;
 
     }
+    h3 {
+        text-align: center;
+    }
 
 }
-h3 {
-    text-align: center;
-}
+@media only screen and (min-width: 601px) and (max-width: 1025px){
+    * {
+        font-family: 'Stardos Stencil', cursive;
+        margin: 0 auto;
+        padding: 0 auto;
+    }
+    #desktop {
+        display: none;
+    }
+    .sidenav {
+        display: none
+    }
 
+    .sidenavm {
+        height: 100%;
+        width: 0;
+        position: fixed;
+        z-index: 1;
+        top: 0;
+        left: 0;
+        background: rgba(0, 0, 0, 0.8);
+        overflow-x: hidden;
+        transition: 0.5s;
+        padding-top: 10vh;
+    }
+
+    .sidenavm a {
+        width: 100%;
+        padding: 1vw;
+        padding-top: 5vh;
+        text-decoration: none;
+        font-size: 30px;
+        color: #818181;
+        display: block;
+        transition: 0.5s;
+        text-align: center;
+    }
+
+    .sidenavm .hover:hover {
+        color: snow;
+        background-color: black;
+        border-bottom: snow 1px solid;
+    }
+
+    span {
+        margin-left: 3vw;
+        text-align: center;
+        font-size: 60px;
+        color: black;
+        position: fixed;
+        z-index: 9999;
+    }
+    #logo img{
+        width: 95vw;
+    }
+    #logo {
+        text-align: center;
+        font-size: 32px;
+        margin-bottom: 5vh;
+    }
+    body {
+        background-color: wheat;
+    }
+    h2{
+        margin-top: 2vh;
+        text-align: center;
+        font-size: 50px;
+    }
+    #pastry {
+        display: grid;
+        grid-template-columns: 50vw 50vw;
+
+    }
+    #pastry img {
+        width: 40vw;
+        margin-bottom: 5vh;
+    }
+    .tablet {
+        display: none;
+    }
+
+    .bonbon {
+        width: 100vh;
+        margin-bottom: 5vh;
+    }
+    #slider{
+        width: 95vw;
+        display: flex;
+        border-radius: 10px;
+        margin-bottom: 3vh;
+    }
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .centered {
+        padding: 1vw;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 28px;
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+    #googleMap {
+        width:100%;
+        height:300px;
+
+    }
+    #contact{
+        text-align: center;
+    }
+    table {
+        border-collapse: collapse;
+        font-size: 32px;
+    }
+
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    #time {
+        display: grid;
+
+    }
+    footer{
+        justify-content: space-between;
+    }
+    footer img {
+        height: 10vh;
+
+    }
+    h3 {
+        text-align: center;
+    }
+
+}
 @media only screen and (max-width: 600px) {
     * {
         font-family: 'Stardos Stencil', cursive;
@@ -236,11 +389,105 @@ h3 {
         text-align: center;
         font-size: 40px;
         color: black;
-    }
+        position: fixed;
+        z-index: 9999;
+        margin-left: 3vw;
 
+    }
+    body {
+        background-color: wheat;
+    }
+    #logo img {
+        width: 95vw;
+    }
+    #logo {
+        text-align: center;
+        font-size: 22px;
+        margin-bottom: 5vh;
+    }
+    h2{
+        margin-top: 2vh;
+        text-align: center;
+        font-size: 42px;
+    }
 
     #desktop {
         display: none
+    }
+
+    #pastry {
+             display: grid;
+         }
+    #pastry img {
+        height: 45vh;
+        margin-bottom: 5vh;
+    }
+    .bonbon {
+        width: 100vh;
+        margin-bottom: 5vh;
+    }
+    .tablet2 {
+        display: none;
+    }
+    #tablet3 {
+        display: none;
+    }
+
+    #slider {
+        display: none;
+    }
+    .container {
+        position: relative;
+        text-align: center;
+        color: white;
+    }
+
+    .centered {
+        padding: 1vw;
+        background: rgba(0, 0, 0, 0.5);
+        font-size: 32px;
+        position: absolute;
+        top: 43%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+    }
+
+    #googleMap {
+        width:100%;
+        height:300px;
+
+    }
+    #contact{
+        text-align: center;
+    }
+    table {
+        border-collapse: collapse;
+        font-size: 20px;
+    }
+
+    td {
+        text-align: left;
+        padding: 8px;
+    }
+
+
+    footer{
+        display: flex;
+        flex-direction: row;
+    }
+    #time {
+        display: grid;
+
+    }
+    footer{
+        justify-content: space-between;
+    }
+    footer img {
+        height: 10vh;
+
+    }
+    h3 {
+        text-align: center;
     }
 }
 
