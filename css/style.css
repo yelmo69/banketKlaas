@@ -280,7 +280,7 @@
     }
 
     .bonbon {
-        width: 100vh;
+        width: 100vw;
         margin-bottom: 5vh;
     }
     #slider{
@@ -423,7 +423,8 @@
         margin-bottom: 5vh;
     }
     .bonbon {
-        width: 100vh;
+        height: 20vh;
+        width: 100vw;
         margin-bottom: 5vh;
     }
     .tablet2 {
